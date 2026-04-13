@@ -1,3 +1,5 @@
+#!/usr/bin/env fish
+
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
 	command yazi $argv --cwd-file="$tmp"
