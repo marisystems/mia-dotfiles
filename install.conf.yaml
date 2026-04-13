@@ -18,6 +18,10 @@
       path: fish/*
       create: true
 
+    ~/.config/:
+      path: yazi/*
+      glob: true
+
     ~/.gitconfig: .gitconfig
 
 - create:
