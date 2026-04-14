@@ -26,8 +26,8 @@
 
     ~/.zshrc: .zshrc
 
-- create:
-    - ~/test
+#- create:
+    #- ~/test
     #- ~/downloads
     #- ~/.vim/undo-history
 
