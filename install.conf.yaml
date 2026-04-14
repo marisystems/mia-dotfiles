@@ -24,6 +24,8 @@
 
     ~/.gitconfig: .gitconfig
 
+    ~/.zshrc: .zshrc
+
 - create:
     - ~/test
     #- ~/downloads
