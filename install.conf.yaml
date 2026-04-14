@@ -22,9 +22,15 @@
       path: yazi/*
       glob: true
 
-    ~/.gitconfig: .gitconfig
+    ~/:
+      path: zsh/.*
+      glob: true
+      exclude: zsh/ohmyzsh
 
-    ~/.zshrc: .zshrc
+    ~/.oh-my-zsh/custom:
+      path: zsh/custom
+
+    ~/.gitconfig: .gitconfig
 
 #- create:
     #- ~/test
