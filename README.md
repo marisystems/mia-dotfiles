@@ -1,5 +1,4 @@
 # mia.files 🗄️
-For **real** this time, time to bring it all together
 
 > Using [dotbot⚡️](https://github.com/anishathalye/dotbot) to manage my files, check it out its pretty cool!
 
