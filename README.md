@@ -17,7 +17,8 @@ linux based distro, but probs work in other distros
 - ```git clone git@github.com:Miavarium/mia-dotfiles.git ~/.dotfiles``` for SSH
 - ```git clone https://github.com/Miavarium/mia-dotfiles.git ~/.dotfiles``` for HTTPS
 2. cd into ~/.dotfiles
-3. run ./install (you can run ./install -vv for more information)
+3. Run ./install (you can run ./install -vv for more information)
+4. Run zsh/oh-my-zsh-repo/tools/.install
 
 ## To-do
 - Write script to download packages automatically 
