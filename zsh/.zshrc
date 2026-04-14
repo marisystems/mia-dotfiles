@@ -11,6 +11,9 @@ fi
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Default editor
+export EDITOR='nvim'
+
 # Path to custom functions
 fpath=(~/.zshfn "${fpath[@]}")
 autoload -Uz $fpath[1]/*(.:t)
