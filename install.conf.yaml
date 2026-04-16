@@ -18,9 +18,10 @@
       path: fish/*
       create: true
 
-    ~/.config/:
+    ~/.config/yazi:
       path: yazi/*
       glob: true
+      create: true
 
     ~/:
       path: zsh/.*

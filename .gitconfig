@@ -3,5 +3,6 @@
 	email = 215432766+Miavarium@users.noreply.github.com 
 [core]
 	editor = nvim
+	fileMode = false
 [init]
 	defaultBranch = main
