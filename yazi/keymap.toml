@@ -1,0 +1,11 @@
+[mgr]
+prepend_keymap = [
+	{ on = [ "g", "p"], run = "cd ~/Documents/Projetos/Programação/",
+		desc = "cd Programação" },
+
+	{ on = [ "g", "w"], run = "cd ~/Documents/Projetos/Programação/WebDev",
+		desc = "cd WebDev" },
+]
+append_keymap = [
+]
+
