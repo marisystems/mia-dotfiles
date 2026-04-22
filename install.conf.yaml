@@ -2,8 +2,6 @@
     link:
       relink: true
 
-- clean: ['~']
-
 - link:
     ~/:
       glob: true
@@ -33,19 +31,9 @@
 
     ~/.gitconfig: .gitconfig
 
-    ~/.tmux: tmux/.tmux.conf
+    ~/.tmux.conf: .tmux.conf
 
 #- create:
     #- ~/test
     #- ~/downloads
     #- ~/.vim/undo-history
-
-- shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  -
-    command: ls -al
-    stdin: true
-    stdout: true
-    description: Testing this stuff
-    quiet: false
-  -
