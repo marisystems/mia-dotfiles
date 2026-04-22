@@ -1,0 +1,10 @@
+tmux
+firefox
+steam
+krita
+blender
+inkscape
+dolphin
+obsidian
+tauon-music-box
+

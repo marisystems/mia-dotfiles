@@ -33,6 +33,8 @@
 
     ~/.gitconfig: .gitconfig
 
+    ~/.tmux: tmux/.tmux.conf
+
 #- create:
     #- ~/test
     #- ~/downloads
@@ -40,3 +42,10 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  -
+    command: ls -al
+    stdin: true
+    stdout: true
+    description: Testing this stuff
+    quiet: false
+  -
