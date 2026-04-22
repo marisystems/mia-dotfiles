@@ -15,17 +15,25 @@ def get_password():
                    stderr=subprocess.DEVNULL)
 
 def print_pretty(str, color="", bold=False):
+    # To print at the right
+    term_width = os.get_terminal_size().columns
+    icon = "⋆˚꩜"
+    
     match color:
         case("black"):
-            COLOR = "\033[0;31m"
+            COLOR = "30m"
         case("red"):
-            COLOR = "\033[0;32m"
+            COLOR = "31m"
         case("blue"):
-            COLOR = "\033[31m"
+            COLOR = "34m"
         case _:
-            COLOR = "\033[31m"
-            
-    print(f"{"=> "}{COLOR}{str}\033[0m")
+            COLOR = "37m"
+    
+    if (bold):
+        print(f"{"=> "}\033[1;{COLOR}{str}\033[0m")
+    else:
+        print(f"{"=> "}\033[0;{COLOR}{str}\033[0m")
+        print(icon.rjust(term_width - 10))
 
 def pacman_update():
     subprocess.run(["sudo", "pacman", "-Syu"], )
@@ -35,9 +43,10 @@ def pacman_update():
 
 def run():
     greeting()
+    print_pretty("Type your password bellow ")
     #get_password()
     #pacman_update()
-    print_pretty("hi", "black")
+
 
 # Classic
 if __name__ == "__main__" :
