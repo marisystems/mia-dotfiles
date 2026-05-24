@@ -39,13 +39,32 @@ def pacman_update():
     subprocess.run(["sudo", "pacman", "-Syu"], )
 
 
+def get_packages():
+    path = "./packages.md"
+    with open(path, 'r') as file:
+        lines = file.readlines()
+    
+    filtered_array = [item.replace("\n", "") for item in lines]
+    filtered_array = [item.replace(",", "") for item in filtered_array]
+    filtered_array = [item.replace("- ", "") for item in filtered_array]
+    filtered_array[:] = [x for x in filtered_array if x]
+    
+    print(filtered_array)
+
+
+def setup_cron():
+    # install cron package
+    # enable cronie service
+    pass
+
 # ----- #
 
 def run():
     greeting()
-    print_pretty("Type your password bellow ")
+    #print_pretty("Type your password below")
     #get_password()
     #pacman_update()
+    get_packages()
 
 
 # Classic

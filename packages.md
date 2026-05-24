@@ -5,6 +5,7 @@
 - obsidian
 - tauon-music-box
 - vesktop (AUR)
+- qbittorrent
 
 ## Terminal utilities
 - neovim
@@ -26,3 +27,6 @@
 - retroarch
 - retroarch-assets-xmb
 - retroarch-assets-ozone
+
+# Utilities
+music-presence-bin (AUR)

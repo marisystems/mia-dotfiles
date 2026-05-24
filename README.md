@@ -7,6 +7,7 @@ linux based distro, but probs work in other distros
 (at the time of writing I'm using CachyOS with KDE Plasma)
 
 ## Components
+- WM : **Hyprland**
 - Shell : **ZSH**
 - Package manager: **pacman & yay**
 - Terminal emulator: **Kitty**
@@ -25,3 +26,4 @@ linux based distro, but probs work in other distros
 - [] Create file with all the packages I want
 - [] Separate the files into modules so i can pick and choose
 - [] Integrate with dotbot
+- [] Create option to use either hyprland or plasma
