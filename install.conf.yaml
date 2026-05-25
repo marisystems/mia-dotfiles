@@ -21,6 +21,11 @@
       glob: true
       create: true
 
+    ~/.config/nvim:
+      path: mia-nvim/*
+      glob: true
+      create: true
+
     ~/:
       path: zsh/.*
       glob: true
