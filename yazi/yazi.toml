@@ -1,5 +1,5 @@
 [mgr]
-show_hidden    = true
+show_hidden    = false
 show_symlink   = true
 
 [[mgr.prepend_keymap]]
