@@ -10,6 +10,6 @@
 [submodule "zsh/custom/themes/powerlevel10k"]
 	path = zsh/custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
-[submodule "caelestia"]
-	path = caelestia
-	url = git@github.com:caelestia-dots/caelestia.git
+[submodule "mia-nvim"]
+	path = mia-nvim
+	url = git@github.com:marisystems/mia-nvim.git

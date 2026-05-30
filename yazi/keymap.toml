@@ -7,10 +7,13 @@ prepend_keymap = [
 		desc = "cd WebDev" },
 
 	{ on = [ "g", "."], run = "cd ~/.dotfiles",
-		desc = "cd .dotfiles" },
+		desc = "cd dotfiles" },
 
-	{ on = [ "E", "v"], run = "code .",
-		desc = "cd .dotfiles" },
+  { on = ["E", "v"], run = "shell 'code .'",
+    desc = "Open Vscode :3" },
+
+  { on = ["E", "l"], run = "shell 'lazygit'",
+    desc = "Open lazygit :D" },
 
 ]
 append_keymap = [
