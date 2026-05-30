@@ -1,15 +1,1 @@
-[submodule "dotbot"]
-	path = dotbot
-	url = https://github.com/anishathalye/dotbot
-[submodule "kitty/kitty-themes"]
-	path = kitty/kitty-themes
-	url = git@github.com:dexpota/kitty-themes.git
-[submodule "ohmyzsh"]
-	path = ohmyzsh
-	url = git@github.com:ohmyzsh/ohmyzsh.git
-[submodule "zsh/custom/themes/powerlevel10k"]
-	path = zsh/custom/themes/powerlevel10k
-	url = https://github.com/romkatv/powerlevel10k.git
-[submodule "mia-nvim"]
-	path = mia-nvim
-	url = git@github.com:marisystems/mia-nvim.git
+
