@@ -5,6 +5,13 @@ prepend_keymap = [
 
 	{ on = [ "g", "w"], run = "cd ~/Documents/Projetos/Programação/WebDev",
 		desc = "cd WebDev" },
+
+	{ on = [ "g", "."], run = "cd ~/.dotfiles",
+		desc = "cd .dotfiles" },
+
+	{ on = [ "E", "v"], run = "code .",
+		desc = "cd .dotfiles" },
+
 ]
 append_keymap = [
 ]

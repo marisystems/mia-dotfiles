@@ -33,6 +33,13 @@
 
     ~/.tmux.conf: .tmux.conf
 
+    
+    ~/.config/hypr:
+      path: hyprland/hyprland/*
+      glob: true
+      create: true
+      force: true
+
 #- create:
     #- ~/test
     #- ~/downloads

@@ -1,0 +1,67 @@
+(defwidget time []
+  (box  :orientation "horizontal"
+        :halign "center"
+  (label :text "${current-time}")))
+
+(defwidget date []
+  (box  :orientation "horizontal"
+        :halign "center"
+  (label :text "${current-date}")))
+
+(defwidget updates []
+  (box  :orientation "horizontal"
+        :haling "center"
+        :spacing "-300"
+  (label :text "📦 ${update-var}")
+  (label :text "🗳️ ${update-aur-var}")))
+
+(defwidget labeled-container [name]
+  (box :class "container"
+    name
+    (children)))
+
+(defwidget boxes []
+  (box  :orientation "h"
+    (box :class "first" (children :nth 0))
+    (box :class "second" (children :nth 1))
+    (box :class "third" (children :nth 2))
+    (box :class "fourth" (children :nth 3))
+    ))
+
+
+(defpoll current-time :interval "1s"
+  `date +%H:%M:%S`)
+
+(deflisten current-date :interval "24h"
+  `date +%D`)
+
+(deflisten current-song :initial ""
+  `playerctl --player playerctld --follow metadata --format {{title}}`)
+
+(deflisten update-var :interval "1h"
+                      :initial "0"
+  `sh ~/.config/eww/scripts/checkupdates.sh`)
+
+(deflisten update-aur-var :interval "1h"
+                      :initial "0"
+  `sh ~/.config/eww/scripts/checkupdates-aur.sh`)
+
+(defwindow bar
+  :monitor 0
+  :stacking "bottom"
+  :exclusive true
+  :focusable false
+  :namespace "eww"
+  :geometry (geometry
+              :width "95%"
+              :height "3%"
+              :anchor "center top")
+  (boxes
+    (label :text "🎶 ${current-song}" :limit-width 20)
+    (time)
+    (date)
+    (updates)
+    ))
+
+
+
