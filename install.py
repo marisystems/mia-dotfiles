@@ -17,9 +17,13 @@ def greeting():
     print("Welcome to the mia dotfiles script 𐔌՞ ܸ.ˬ.ܸ՞𐦯")
     print("------------------------------------------")
 
+    print("This script is a post-install for my dotfiles and it might not work")
+    print("in your machine.")
+    print("This script installs and configuring the most common stuff I dot after a fresh install")
+    print("--------------------------------------------------------------------------------------")
+
 def get_password():
     print_pretty("Getting password for sudo commands!", "blue", True)
-    print("Enter your sudo password below")
     subprocess.run(["sudo", "ls"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 def pacman_helper(package_name):
@@ -71,7 +75,7 @@ def setup_paru():
         subprocess.run(["makepkg", "si"])
         os.chdir(ORIGINAL_DIR)
 
-def pacman_update():
+def system_update():
     print_pretty("Updating system!", "blue", True)
     subprocess.run(["sudo", "pacman", "-Syu"],)
 
@@ -79,6 +83,14 @@ def install_packages():
     print_pretty("Installing all packages!", "blue", True)
     for package in my_packages.packages:
         pacman_helper(package)
+
+def install_fonts():
+    print_pretty("Installing fonts!", "blue", True)
+    # Font viewer pretty useful :D
+    pacman_helper("font-manager")
+    # Install all fonts
+    for font in my_packages.fonts:
+        pacman_helper(font)
 
 def run_dotbot():
     print_pretty("Running dotbot!", "blue", True)
@@ -97,7 +109,6 @@ def setup_cron():
     except subprocess.CalledProcessError as E:
         print(E)
 
-
 def setup_gamemode():
     print_pretty("Installing and configuring Gamemode!", "blue", True)
     pacman_helper("gamemode")
@@ -108,22 +119,20 @@ def setup_gamemode():
         print(E) 
     
 
-def setup_fonts():
-    print_pretty("Installing fonts!", "blue", True)
-    # Font viewer pretty useful :D
-    pacman_helper("font-manager")
-    # Install all fonts
-    for font in my_packages.fonts:
-        pacman_helper(font)
-
 # ----- #
 
 def run():
     greeting()
     get_password()
+    system_update()
+    setup_paru()
+    install_packages()
+    install_fonts()
+    setup_cron()
+    setup_gamemode()
+    run_dotbot()
 
-    
-# Classic
+# Classic (makes sure it only executes when called form __main__)
 if __name__ == "__main__":
     run()
 
