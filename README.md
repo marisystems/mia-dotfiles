@@ -7,20 +7,26 @@ linux based distro, but probs work in other distros
 (at the time of writing I'm using CachyOS with KDE Plasma)
 
 ## Components
-- WM : **Hyprland**
-- Shell : **ZSH**
-- Package manager: **pacman & yay**
+- WM : **Hyprland / KDE**
+- Display Manager: **SDDM**
+- Shell : **Fish**
+- Package manager: **pacman & paru**
 - Terminal emulator: **Kitty**
 - Font : **Victor Mono Nerd*
+
+## Overview 
+While the symlinking will be done using the dotbot utility
+the installation and further setup using specific commands
+will be handled with the install.py
 
 ## Instructions
 1. Git clone this repo
 - ```git clone git@github.com:marisystems/mia-dotfiles.git ~/.dotfiles``` for SSH
 - ```git clone https://github.com/marisystems/mia-dotfiles.git ~/.dotfiles``` for HTTPS
 2. cd into ~/.dotfiles
-3. Run ./install (you can run ./install -vv for more information)
-4. Run zsh/oh-my-zsh-repo/tools/.install
-
+3. Run python install.py to download all packages
+4. Whenever you need to remake symlinks and add new ones
+configure dotbot.yaml and run ./install-dot (-vv for verbose)
 ## To-do
 - [] Create python script for post-install
 - [] Create file with all the packages I want
