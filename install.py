@@ -1,4 +1,5 @@
 import subprocess
+import sys
 import os
 # Get all the pacman packages
 import my_packages
@@ -19,8 +20,16 @@ def greeting():
 
     print("This script is a post-install for my dotfiles and it might not work")
     print("in your machine.")
-    print("This script installs and configuring the most common stuff I dot after a fresh install")
+    print("This script installs and configures the most common stuff I dot after a fresh install")
     print("--------------------------------------------------------------------------------------")
+
+    user_choice = input("Do you wish to continue? (y/n) ")
+    if user_choice.lower() == "y":
+        return
+    else:
+        print_pretty("Exiting...", "red", True)
+        sys.exit()
+
 
 def get_password():
     print_pretty("Getting password for sudo commands!", "blue", True)
@@ -95,7 +104,7 @@ def install_fonts():
 def run_dotbot():
     print_pretty("Running dotbot!", "blue", True)
     try:
-        subprocess.run(["sh", "install-dot", "-v"])
+        subprocess.run(["sh", "install-dot", "-v"], cwd=ORIGINAL_DIR)
     except subprocess.CalledProcessError as E:
         print(E)
 
