@@ -12,9 +12,7 @@ alias ba='nvim ~/.bashrc'
 alias src='source ~/.bashrc'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-
 alias coding='cd ~/Projects/Coding/ && y'
-
 alias band='bandcamp-dl -ferku'
 
 ### Put my Scripts on path----------------------------------------------
