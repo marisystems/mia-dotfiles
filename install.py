@@ -1,7 +1,6 @@
 import subprocess
 import sys
 import os
-# Get all the pacman packages
 import my_packages
 
 # Automatically get info about user
