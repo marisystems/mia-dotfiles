@@ -1,4 +1,4 @@
-EXTENSIONS_PATH=~/.dotfiles/files/vscode/code-extensions.txt
+EXTENSIONS_PATH=~/.dotfiles/files/vscode/code-extensions
 
 echo "Installing code extensions..."
 cat $EXTENSIONS_PATH | while read line

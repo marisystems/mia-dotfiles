@@ -1,7 +1,0 @@
-#!/bin/bash
-dotfiles_dir="$HOME"/.dotfiles
-
-if [ "$PWD" = "$dotfiles_dir" ]; then
-	save-extensions
-	git add code-extensions.txt
-fi

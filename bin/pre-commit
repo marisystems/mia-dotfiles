@@ -1,0 +1,7 @@
+#!/bin/bash
+dotfiles_dir="$HOME"/.dotfiles
+
+if [ "$PWD" = "$dotfiles_dir" ]; then
+	$dotfiles_dir/files/vscode/save-extensions.sh
+	git add $dotfiles_dir/files/vscode/code-extensions
+fi
