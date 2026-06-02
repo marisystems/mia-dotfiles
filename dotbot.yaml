@@ -41,7 +41,13 @@
       create: true
       force: true
 
+    ~/.config/Code/User:
+      path: files/vscode/*
+      glob: true
+      force: true
+
     ~/.env.sh: files/.env.sh
+
 
 #- create:
     #- ~/test
