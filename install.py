@@ -152,7 +152,7 @@ def install_grub_theme():
     # Edit the grub cfg to the theme
     print_pretty("Configuring " + grub_dir, color="blue")
     subprocess.run(
-    ["sudo", "sed", "-i", "-e", 
+    ["sudo", "sed", "-i", "-e",
     ' s/^GRUB_THEME.*|#GRUB_THEME.*/GRUB_THEME=\/boot\/grub\/themes\/CelesteGRUBTheme1080p/g ', grub_dir]
     )
 
