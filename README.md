@@ -10,9 +10,10 @@ linux based distro, but probs work in other distros
 - WM : **Hyprland / KDE**
 - Display Manager: **SDDM**
 - Shell : **Fish**
-- Package manager: **pacman & paru**
+- Package manager: **Pacman / Paru**
 - Terminal emulator: **Kitty**
-- Font : **Victor Mono Nerd*
+- Font : **Victor Mono Nerd**
+- Bootloader: **GRUB**
 
 ## Overview 
 While the symlinking will be done using the dotbot utility
@@ -28,8 +29,7 @@ will be handled with the install.py
 4. Whenever you need to remake symlinks and add new ones
 configure dotbot.yaml and run ./install-dot (-vv for verbose)
 ## To-do
-- [] Create python script for post-install
-- [] Create file with all the packages I want
-- [] Separate the files into modules so i can pick and choose
-- [] Integrate with dotbot
+- [x] Create python script for post-install
+- [x] Create file with all the packages I want
+- [x] Integrate with dotbot
 - [] Create option to use either hyprland or plasma
