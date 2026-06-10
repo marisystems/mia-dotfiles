@@ -2,5 +2,6 @@
     "workbench.settings.showAISearchToggle": false,
     "chat.disableAIFeatures": true,
     "discord.removeDetails": true,
-    "discord.swapBigAndSmallImage": true
+    "discord.swapBigAndSmallImage": true,
+    "vscode-pets.theme": "forest"
 }
