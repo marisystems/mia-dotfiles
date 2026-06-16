@@ -169,7 +169,7 @@ def run():
     # setup_cron()
     # setup_gamemode()
     # run_dotbot()
-    install_grub_theme()
+    #install_grub_theme()
 
 # Classic (makes sure it only executes when called form __main__)
 if __name__ == "__main__":

@@ -5,7 +5,7 @@ packages = [
     'fzf',
     'kitty',
     'fish',
-    'tmux'
+    'tmux',
     'hyprland',
     'nmap',
     'lazygit',
@@ -19,17 +19,19 @@ packages = [
     'tauon-music-box',
     'firefox',
     'steam',
-    'discord'
+    'discord',
     'visual-studio-code-bin',
     'chromium',
     'qbittorrent',
     'keepassxc',
-    'glow'
+    'glow',
     'python-pypresence',
     'music-presence-bin',
     'retroarch',
-    'retroarch-assets-xmb'
-    'retroarch-assets-ozone'
+    'retroarch-assets-xmb',
+    'retroarch-assets-ozone',
+    'asusctl',
+    'envycontrol'
 ]
 
 # System fonts

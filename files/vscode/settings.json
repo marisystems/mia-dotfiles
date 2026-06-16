@@ -3,5 +3,6 @@
     "chat.disableAIFeatures": true,
     "discord.removeDetails": true,
     "discord.swapBigAndSmallImage": true,
-    "vscode-pets.theme": "forest"
+    "vscode-pets.theme": "forest",
+    "editor.minimap.enabled": false
 }
