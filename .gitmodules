@@ -2,6 +2,6 @@
 [submodule "modules/dotbot"]
 	path = modules/dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "mia-nvim"]
+[submodule "modules/mia-nvim"]
 	path = modules/mia-nvim
 	url = https://github.com/marisystems/mia-nvim
