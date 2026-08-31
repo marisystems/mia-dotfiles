@@ -131,9 +131,6 @@ def install_grub_theme():
     source = DOTFILES_DIR + "/files/grub/" + theme_name
     dest = "/boot/grub/themes/" + theme_name
     grub_dir = "/etc/default/grub"
-
-
-
     #Check if theme is downloaded, if not download it
 
     # If its a directory
@@ -156,6 +153,16 @@ def install_grub_theme():
     ' s/^GRUB_THEME.*|#GRUB_THEME.*/GRUB_THEME=\/boot\/grub\/themes\/CelesteGRUBTheme1080p/g ', grub_dir]
     )
 
+def laptop_utility():
+    # Write a function to automatically get laptop stuff for asus control
+    # like envycontrol, asusctl and such
+    pass
+
+def install_discord():
+    # Write a function to patch discord with vencord and
+    # download the system24 theme
+
+
 # ----- #
 
 
@@ -164,7 +171,7 @@ def run():
     # get_password()
     # system_update()
     # setup_paru()
-    # install_packages()
+    install_packages()
     # install_fonts()
     # setup_cron()
     # setup_gamemode()

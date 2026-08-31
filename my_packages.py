@@ -30,6 +30,7 @@ packages = [
     'retroarch',
     'retroarch-assets-xmb',
     'retroarch-assets-ozone',
+    'libretro',
     'asusctl',
     'envycontrol'
 ]

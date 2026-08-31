@@ -4,5 +4,8 @@
     "discord.removeDetails": true,
     "discord.swapBigAndSmallImage": true,
     "vscode-pets.theme": "forest",
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "livePreview.autoRefreshPreview": "On Changes to Saved Files",
+    "vscode-pets.throwBallWithMouse": true,
+    "makefile.configureOnOpen": true
 }
