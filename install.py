@@ -124,34 +124,35 @@ def setup_gamemode():
     try:
         subprocess.run(["sudo", "usermod", "-aG", "gamemode", USERNAME])
     except subprocess.CalledProcessError as E:
-        print(E) 
-    
-def install_grub_theme():
-    theme_name = "CelesteGRUBTheme1080p"
-    source = DOTFILES_DIR + "/files/grub/" + theme_name
-    dest = "/boot/grub/themes/" + theme_name
-    grub_dir = "/etc/default/grub"
-    #Check if theme is downloaded, if not download it
+        print(E)
 
-    # If its a directory
-    if os.path.isdir(dest) :
-        print_pretty("Theme already exists, overwriting", color="blue")
-        subprocess.run(["sudo", "rm", "-r", dest], capture_output=True)
-
-    # If its a file
-    elif os.path.isfile(dest) :
-        print_pretty("Theme already exists, overwriting", color="blue")
-        subprocess.run(["sudo", "rm", dest], capture_output=True)
-
-    print_pretty("Copying theme to" + source, color="blue")
-    subprocess.run(["sudo", "cp", "-r", source, dest], capture_output=True)
-
-    # Edit the grub cfg to the theme
-    print_pretty("Configuring " + grub_dir, color="blue")
-    subprocess.run(
-    ["sudo", "sed", "-i", "-e",
-    ' s/^GRUB_THEME.*|#GRUB_THEME.*/GRUB_THEME=\/boot\/grub\/themes\/CelesteGRUBTheme1080p/g ', grub_dir]
-    )
+# def install_grub_theme():
+#     theme_name = "CelesteGRUBTheme1080p"
+#     source = DOTFILES_DIR + "/files/grub/" + theme_name
+#     dest = "/boot/grub/themes/" + theme_name
+#     grub_dir = "/etc/default/grub"
+#     #Check if theme is downloaded, if not download it
+#
+#     # If its a directory
+#     if os.path.isdir(dest) :
+#         print_pretty("Theme already exists, overwriting", color="blue")
+#         subprocess.run(["sudo", "rm", "-r", dest], capture_output=True)
+#
+#     # If its a file
+#     elif os.path.isfile(dest) :
+#         print_pretty("Theme already exists, overwriting", color="blue")
+#         subprocess.run(["sudo", "rm", dest], capture_output=True)
+#
+#     print_pretty("Copying theme to" + source, color="blue")
+#     subprocess.run(["sudo", "cp", "-r", source, dest], capture_output=True)
+#
+#     # Edit the grub cfg to the theme
+#     print_pretty("Configuring " + grub_dir, color="blue")
+#     subprocess.run(
+#     ["sudo", "sed", "-i", "-e",
+#     ' s/^GRUB_THEME.*|#GRUB_THEME.*/GRUB_THEME=\/boot\/grub\/themes\/CelesteGRUBTheme1080p/g ', grub_dir]
+#     )
+#
 
 def laptop_utility():
     # Write a function to automatically get laptop stuff for asus control
@@ -161,11 +162,10 @@ def laptop_utility():
 def install_discord():
     # Write a function to patch discord with vencord and
     # download the system24 theme
+    pass
 
 
 # ----- #
-
-
 def run():
     # greeting()
     # get_password()

@@ -33,7 +33,19 @@
 
     ~/.gitconfig: files/.gitconfig
 
-    ~/.tmux.conf: files/.tmux.conf
+    ~/.tmux.conf: files/tmux/.tmux.conf
+
+    ~/.tmux/plugins/tpm:
+      path: modules/tpm/*
+      glob: true
+      create: true
+      force: true
+
+    ~/.tmux/scripts/:
+      path: files/tmux/scripts/*
+      glob: true
+      create: true
+      force : true
 
     ~/.config/hypr:
       path: files/hypr/hyprland/*

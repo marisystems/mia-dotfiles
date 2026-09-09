@@ -32,7 +32,11 @@ packages = [
     'retroarch-assets-ozone',
     'libretro',
     'asusctl',
-    'envycontrol'
+    'envycontrol',
+    'git',
+    'ripgrep',
+    'fzf',
+    'fd'
 ]
 
 # System fonts
