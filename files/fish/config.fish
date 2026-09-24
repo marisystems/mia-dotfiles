@@ -24,3 +24,8 @@ abbr l 'ls'
 abbr ll 'ls -l'
 abbr la 'ls -a'
 abbr lla 'ls -la'
+
+abbr mk 'make'
+abbr mr 'make run'
+
+~/Documents/Projetos/Programação/C/greeting Mia :D

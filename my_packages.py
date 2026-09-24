@@ -6,7 +6,6 @@ packages = [
     'kitty',
     'fish',
     'tmux',
-    'hyprland',
     'nmap',
     'lazygit',
     'dolphin',
@@ -27,10 +26,6 @@ packages = [
     'glow',
     'python-pypresence',
     'music-presence-bin',
-    'retroarch',
-    'retroarch-assets-xmb',
-    'retroarch-assets-ozone',
-    'libretro',
     'asusctl',
     'envycontrol',
     'git',
@@ -39,8 +34,21 @@ packages = [
     'fd'
 ]
 
-# System fonts
+niri = [
+    'niri',
+    'wdisplays',
+    'quickshell',
+    'noctalia'
+]
+
+retroarch = [
+    'retroarch',
+    'retroarch-assets-xmb',
+    'retroarch-assets-ozone',
+    'libretro'
+]
+
 fonts = [
     'inter-font',
-    'ttf-victor-mono-nerd',
+    'ttf-victor-mono-nerd'
 ]

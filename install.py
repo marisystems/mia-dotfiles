@@ -48,7 +48,7 @@ def pacman_helper(package_name):
     else:
         print_pretty("Package already installed, skipping.", "blue")
         return
-    
+
 def print_pretty(str, color="", bold=False):
     # To print at the right
     term_width = os.get_terminal_size().columns
@@ -126,6 +126,12 @@ def setup_gamemode():
     except subprocess.CalledProcessError as E:
         print(E)
 
+def setup_niri():
+    print_pretty("Installing niri packages!", "blue", True)
+    for package in my_packages.niri:
+        pacman_helper(package)
+    print_pretty("Installed all niri packages", "blue", True)
+
 # def install_grub_theme():
 #     theme_name = "CelesteGRUBTheme1080p"
 #     source = DOTFILES_DIR + "/files/grub/" + theme_name
@@ -152,31 +158,21 @@ def setup_gamemode():
 #     ["sudo", "sed", "-i", "-e",
 #     ' s/^GRUB_THEME.*|#GRUB_THEME.*/GRUB_THEME=\/boot\/grub\/themes\/CelesteGRUBTheme1080p/g ', grub_dir]
 #     )
-#
-
-def laptop_utility():
-    # Write a function to automatically get laptop stuff for asus control
-    # like envycontrol, asusctl and such
-    pass
-
-def install_discord():
-    # Write a function to patch discord with vencord and
-    # download the system24 theme
-    pass
-
 
 # ----- #
+
 def run():
     # greeting()
     # get_password()
     # system_update()
     # setup_paru()
-    install_packages()
+    # install_packages()
     # install_fonts()
+    # setup_niri();
     # setup_cron()
     # setup_gamemode()
-    # run_dotbot()
-    #install_grub_theme()
+    run_dotbot()
+    # install_grub_theme()
 
 # Classic (makes sure it only executes when called form __main__)
 if __name__ == "__main__":

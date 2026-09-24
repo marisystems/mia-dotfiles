@@ -47,6 +47,18 @@
       create: true
       force : true
 
+    ~/.config/mpv/:
+      path: files/mpv/*
+      glob: true
+      create: true
+      force: true
+
+    ~/.config/niri/:
+      path: files/niri/*
+      glob: true
+      create: true
+      force: true
+
     ~/.config/hypr:
       path: files/hypr/hyprland/*
       glob: true
